@@ -1,0 +1,71 @@
+<html>
+    <title>An Introduction to JavaScript, Code structure</title>
+    <head></head>
+    <body>
+        <script>
+            //task 1
+            alert("Hello World")
+
+           //task 2
+            let UserName= "Guru"
+            let UserAge =20
+             let Boolean =true
+             let Null =null
+             let user ={
+                Name:"guru",
+                Age:20
+             };
+          console.log(UserName)
+          console.log(UserAge)
+          console.log(Boolean)
+          console.log(Null)
+          console.log(user.Name)
+
+         //task 3
+          let a=10,b=25
+          console.log(a+b)
+          console.log(a-b)
+          console.log(a*b)
+          console.log(a%b)
+         //task 4
+         var string1 ="Guru"
+         var string2= "Raja"
+         console.log(string1+string2)
+         //task 5
+         var num ="123"
+         var n =0
+         console.log(typeof(num))
+         console.log(typeof(n))
+
+         //task 6
+         // "//" it is used for Single line Comment
+         // "/*" it is used for multi line comment
+         // task 7
+         // Semicolon-Separated Lines
+         var a1 = 5; var b1 = 10; var c = a1 + b1; console.log("Sum:", c);
+         // non-Semicolon-Separated Lines
+         var a1 = 5
+          var b1 = 10
+           var c = a1 + b1
+          console.log("Sum:", c)
+          /* there is no difference in  behavior .But in the case of using semicolon-Separated lines in  Complex Application  it  
+          might reduce readability, because of more complex scripts.*/
+          
+          // task 8
+          var n2=5
+         var Name2 ="*"
+         while(n2>0){
+          console.log(Name2)
+          n2--
+         }
+         // task 9
+         var a1 = 5; var b1 = 10; var c = a1 + b1; console.log("Sum:", c);
+         // task 10
+         /*Placing the <script> tag at the bottom of the <body> is often recommended 
+          for scripts that manipulate DOM elements because it ensures the entire page is loaded 
+          before the script runs. However, for scripts that need to run early or require specific
+           timing, you might use the <head> with defer or async, or manage script execution using event listeners or other techniques.*/
+
+        </script>
+    </body>
+</html>

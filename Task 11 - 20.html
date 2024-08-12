@@ -1,0 +1,68 @@
+<html>
+    <title>The modern mode, “use strict”, Variables</title>
+    <head></head>
+    <body>
+        <script>
+            // task 11
+            a =23;
+            console.log(a)
+            /* without using “use strict” and try to assign a value to an
+                undeclared variable  it did not show any Error*/
+            // task 12
+            "use strict";
+            a1=31;
+            console.log(a1)
+             /* with using “use strict” and try to assign a value to an
+                undeclared variable  it show  Error*/
+
+            //task 13
+            var num={
+                age:23
+            }
+            console.log("before delete :" + num.age)
+            delete num.age;
+            console.log("After delete: "+ num.age)
+
+            // task 14
+                 /* without using “use strict” and try to assign a value to an
+               undeclared variable  it did not show any Error*/
+                /* with using “use strict” and try to assign a value to an
+                undeclared variable  it show  Error*/
+
+            // task 15
+           /* use strict";
+             var let = 5;  This will cause a syntax error in strict mode*/
+
+
+             // task 16
+             let num1 =10
+             var num2= 23
+             const NUM_3=22
+             console.log(num1)
+             console.log(num2)
+             console.log(NUM_3)
+
+             // task 17
+            const NAME_U ="Guru"
+            //const NAME_U="raja"
+            // reassiging of const variable it end up with a error
+
+            //task 18
+            var number ;
+            console.log(number)
+            // it print undefined
+
+            //task 19
+            var num ="123"
+         var n =0
+         console.log(typeof(num))// string
+         console.log(typeof(n))// number
+
+         // task 20
+         var str ="Guru"
+         var str="Raja"
+         console.log(str)// Raja
+
+        </script>
+    </body>
+</html>

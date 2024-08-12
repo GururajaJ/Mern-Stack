@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <title>Data types, Basic operators, maths </title>
+    <head></head>
+    <body>
+        <script>
+            "use strict";
+         // task 21
+      var myString = "Hello, world!";
+      var myNumber = 42;
+    var myBoolean = true;
+      var myNull = null;
+      var myUndefined;
+     
+      var myObject = {
+          name: "Alice",
+          age: 30,
+          isStudent: false
+            };
+        
+        console.log("String: ", myString);  
+        console.log("Number: ", myNumber);
+        console.log("Boolean: ", myBoolean);
+        console.log("Null: ", myNull); 
+        console.log("Undefined: ", myUndefined); 
+        console.log("Object: ", myObject);  
+
+        // task 22
+         console.log(typeof(myString))//String
+         console.log(typeof(myNumber))//num
+         console.log(typeof(myBoolean))//boolean
+         console.log(typeof(myNull))//null
+         console.log(typeof(myUndefined))//undefined
+         console.log(typeof(myObject))//object
+
+         // task 23
+        // var sym =@
+        // console.log(typeof(sym)) it end up with an error
+
+        //task 24
+
+        var num =null
+        console.log(typeof(num))//it prints object
+
+        //task 25
+
+         a = "guru"
+         console.log(a)
+         var a;
+         // by using of var you can declaring a variable where you want
+
+        /* b= "raja"
+         console.log(b)
+         let b; 
+         it immpossible to decalering a variable where you want ,it end up with an error */
+
+
+         // task 26
+         // implicit
+         var str = "42";
+       var num = str * 2; 
+         console.log(num); 
+         console.log(typeof num);
+         //explicit
+
+         var a= "32"
+         var num = Number(a)
+         num=num *5
+         console.log(num)
+         console.log(typeof(num))
+
+
+         // task 27
+
+         var num = true
+         var str =String(true)
+         console.log(typeof(str))// string
+
+         // task 28
+         var a=10,b=25
+          console.log(a+b)
+          console.log(a-b)
+          console.log(a*b)
+          console.log(a%b)
+
+          // task 29
+          var num =30
+          console.log(num)//30
+          num++
+          console.log(num)//31
+          num--
+          console.log(num)//30
+          // task 30
+          var a = 10;
+         var b = 5;
+          var c = 2;
+           var d = 3; 
+         var result = a + b * c / d - (b + d) * c;
+            console.log(result);
+
+        </script>
+    </body>
+</html>
