@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Logical operators, Functions 
+        </title>
+    </head>
+    <body>
+        <script>
+            "use strict";
+
+            //task 41
+            /* Using of && operator it simply check both  condition are true or not 
+               it return true only both condition are true*/
+               // Using of || or operation ,it returns true if any one condition in true
+
+               // task 42
+               var num =23
+               if(num>=18 && num<=42){
+                console.log("Number is within the range")
+               }
+               else{
+                console.log("Not in range")
+               }
+
+               // task 43
+
+               var num = false
+               console.log(!num)// true
+               // task 44
+
+               /*Short-Circuiting Behavior in expressions with the logical AND operatoif the first operand evaluates to false,
+                the entire expression cannot be true regardless of the second operand.
+                Therefore, the second operand is not evaluated.*/
+
+                // task 45
+
+            console.log("Hello" && "World"); 
+                  console.log(0 && "World");     
+                  // task 46
+
+                //Function()
+
+                function sum(a,b){
+                    var s=a+b
+                    console.log("Add "+ s)
+                }
+                sum(2,8)
+
+                // task 47
+
+                function rectangle(l,b){
+                    var area = l*b
+                    console.log("Area of the rectangle "+ area)
+
+                }
+                rectangle(23,78)
+                //task 48
+                function showmes(){
+                    console.log("Hello")
+                }
+                showmes()
+                // task 49
+
+                function show(){
+                    return 
+                }
+              console.log(show())// it return undefined
+
+              // task 50
+
+              function fun(){
+                console.log("hi")
+              }
+              fun(3,5)// it simply return hi
+        </script>
+    </body>
+</html>

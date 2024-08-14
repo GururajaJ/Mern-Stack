@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Arrow Functions
+        </title>
+    </head>
+    <body>
+        <script>
+            "use strict";
+           //Task 51
+            let mess = (name)=>{
+                 return name
+            }
+            console.log(mess("Guru"))
+
+            // Task 52
+            var sum = (a,b)=>{
+                 return a+b;
+            }
+            console.log(sum(23,78))
+            console.log(sum(43,78))
+
+            // task 53
+             
+            var IsEven = (num)=>{
+               if(num%2==0){
+                return true
+               }
+               else{
+                return false
+               }
+            }
+            console.log(IsEven(34))
+
+            //task 54
+            var MaxNum =(a,b)=>{
+                if(a>b){
+                  return a
+                }
+                else{
+                    return b
+                }
+            }
+            console.log(MaxNum(23,54) +" is Max Value")
+
+            // task 55
+            var myObject = {
+            value: 10,
+
+           multiplyTraditional: function(num) {
+         return this.value * num;
+             },
+
+           multiplyArrow: function(num) {
+              (num)=>{
+               return this.value * num;}
+           }
+               };
+
+           console.log('Result of multiplyTraditional:', myObject.multiplyTraditional(4));
+               console.log('Result of multiplyArrow:', myObject.multiplyArrow(6)); 
+
+
+
+        </script>
+    </body>
+</html>
