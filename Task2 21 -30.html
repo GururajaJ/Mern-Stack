@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Additional methods: map(), filter(), reduce(), slice(), splice()
+        </title>
+    </head>
+    <body>
+        <script>
+            "use strict";
+            // task 21
+            var myarray =[1,2,3,4];
+            console.log(myarray)
+            var tosquared = temp=>(temp*temp)
+
+            var newArray=myarray.map(tosquared)
+            console.log(newArray)
+
+            // task 22
+
+            var EvenArray = newArray.filter(temp=>temp%2==0)
+            console.log(EvenArray)
+            // task 23
+            var TotalVal =newArray.reduce((a1,currentvalue)=>a1+currentvalue,0)
+            console.log(TotalVal)
+            // task 24
+
+            let MovieArray = ["Leo", "Mahaan", "Karnan", "Asuran", "Vada Chennai"];
+               var stringl = str => {
+                var l = str.toString().length;
+                    return l;
+                };
+            var larray = MovieArray.map(stringl);
+                console.log(larray);
+
+                // task 25
+                console.log(MovieArray)
+                MovieArray.splice(2,1,"Replace")
+                console.log(MovieArray)
+                // task 26
+                let intArray =[1,2,3,4,5,6]
+                console.log(intArray)
+                console.log(intArray.slice(1,4))
+                // task 27
+
+                
+            var week =new Array()
+            week=["Arun","Guru","Arjun","Max","Raja"]
+            console.log(week)
+            var NewArray = week.filter(str=>{
+                if(str[0]=='A'){
+                    return str
+                }
+            })
+            console.log(NewArray)
+            // task 28
+            var markArray =[90,60,40,80,70]
+            console.log(markArray)
+            var grade = temp=>{
+                if(temp>=90){
+                    return "A"
+                }
+                else if(temp>=80 && temp<90){
+                    return "B+"
+                }
+                else if(temp>=70 && temp<80){
+                    return "B"
+                }
+                else if(temp>=60 && temp<70){
+                    return "C+"
+                }
+                else if(temp>=50 && temp<60){
+                    return "C"
+                }
+                else{
+                    return "F"
+                }
+            }
+
+            var gradeArray = markArray.map(grade)
+            console.log(gradeArray)
+
+            // task 29
+            var ageArray=[23,45,12,43,54,23]
+            console.log(ageArray)
+            var avg=ageArray.length
+            var Totalage =ageArray.reduce((a1,currentvalue)=>a1+currentvalue,0)
+            console.log(Totalage/avg)
+
+
+
+        </script>
+    </body>
+</html>

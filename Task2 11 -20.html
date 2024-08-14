@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arrays, Array methods (push, pop, shift, unshift):</title>
+    </head>
+    <body>
+        <script>
+            "use strict";
+
+            // task 11
+            var myArray =["Apple","orange"]
+            myArray.push("Mango")
+            console.log(myArray)
+
+            // task 12
+            myArray.pop()
+            console.log(myArray)
+
+            //task 13
+            myArray.unshift("Strawberry")
+            console.log(myArray)
+            // task 14
+
+            myArray.shift()
+            console.log(myArray)
+            // task 15
+
+            let array =new Array(1,2,3,4)
+            function funarray(n){
+                array.push(7)
+            }
+
+            funarray(7)
+            console.log(array)
+            // task 16
+
+            var myArray=new Array()
+            function strArray(str){
+                myArray.push(str)
+            }
+            strArray("guru")
+            strArray("raja")
+            strArray("Max")
+            console.log(myArray)
+            myArray.pop()
+            console.log(myArray)
+
+            // task 17
+
+            var week =new Array()
+            week=["Sunday","Monday","Tuesday","wednesday","Thursday","Friday","Saturday"]
+            console.log(week)
+            week.unshift(week.pop())
+            week.unshift(week.pop())
+            week.unshift(week.pop())
+            week.unshift(week.pop())
+            week.unshift(week.pop())
+            week.unshift(week.pop())
+            console.log(week)
+            // task 18
+
+            var letter = ["a","b","c","d","e","f", "g", "h", "i", "j", "k", "l", "m", "n", "o", 
+            "p", "q", "r", "s", "t", "u", "v", "w", "x", "y"]
+            console.log(letter)
+
+            function addZ(l){
+                letter.push(l)
+                letter.unshift(l)
+            }
+            addZ("z")
+            console.log(letter)
+
+            // task 19
+            let MovieArray =["Leo","Mahaan","karnan","asuran","vada chennai"]
+            console.log(MovieArray)
+            var movie= prompt("Enter the Movie Name")
+            MovieArray.push(movie)
+            console.log(MovieArray)
+            // task 20
+            MovieArray.splice(2,1)
+            console.log(MovieArray)
+            
+           
+        </script>
+    </body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Objects and methods, “this”
+        </title>
+    </head>
+    <body>
+        <script>
+            "use strict";
+            // task 1
+            var MyBook ={
+                title:"The Ocean",
+                Author:"Guru",
+                Published: 2004,
+                getSummery :function(){
+                        return "This is very nick book"
+                }
+            }
+
+            console.log(MyBook.getSummery())
+
+            // task2
+
+            MyBook.age=23
+            console.log(MyBook)
+         
+            // task3
+            var calculator = {
+                   Add: function() {
+                 
+                    var sum = 21+78
+                  return sum;
+                 
+                       },
+                    Sub: function() {
+                     console.log(21 - 54);
+                    },
+                      Multi: function() {
+                   console.log(21 * 56);
+                  }
+                      };
+                     
+                      calculator.Sub(); 
+                calculator.Multi(); 
+
+                //task4
+            
+                var myArray =new Array()
+                
+                myArray.push(console.log( calculator.Add()))
+                for(let i in myArray){
+                    console.log(i)
+                }
+
+                //task 5
+
+                let Myage={
+                    age:20,
+
+                    inAge:function(){
+                        this.age++;
+                    },
+                    deage:function(){
+                       this.age--;
+                    }
+                }
+                Myage.inAge()
+                Myage.inAge()
+                Myage.inAge()
+                Myage.inAge()
+                Myage.inAge()
+                
+                console.log(Myage.age)
+                Myage.deage()
+                console.log(Myage.age)
+                
+                // task 6
+                let Myobject ={
+
+                    Name:"Guru",
+                    greet:function(){
+                        return this.Name
+                    }
+                        
+                    }
+                
+                console.log(Myobject.greet())
+
+                //task 7
+
+                let Myredius ={
+                    radius:23,
+                    Calculate:function(){
+                        console.log(this.radius*this.radius*3.14)
+                    },
+                    Diameter:function(){
+                        console.log(2*this.radius)
+                    },
+                    Circumference:function(){
+                        console.log(2*3.14*this.radius)
+                    }
+                
+                }
+                
+           Myredius.Calculate()
+
+
+           //task 8
+
+           Myredius.Diameter()
+           Myredius.Circumference()
+         // task 9 // task 10
+
+         let Myaccount={
+            name:"Guru",
+            balance:200,
+            Deposite:function(amount){
+               this.balance= this.balance+amount
+            },
+            Withdraw:function(amount){
+                if(this.balance>amount){
+                    this.balance=this.balance-amount
+                }
+                else{
+                    console.log("influenced fund")
+                }
+
+
+            }
+
+
+         }
+         Myaccount.Deposite(200)
+         Myaccount.Deposite(133)
+         Myaccount.Withdraw(400)
+         console.log(Myaccount.balance)
+
+        </script>
+    </body>
+</html>
